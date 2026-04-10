@@ -32,8 +32,12 @@ while True:
     
     if entrada == '2':
         os.system('cls' if os.name == 'nt' else clear)
-        valor = input('Índice do item:')
-        lista.pop(int(valor))
+        valor = input('Índice do item: ')
+        try:
+            lista.pop(int(valor))
+        except:
+            print('Valor de índice inválido')
+            continue
 
 
     # VIEW
