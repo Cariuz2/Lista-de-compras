@@ -37,7 +37,7 @@ while True:
             lista.pop(int(valor))
         except:
             print('Valor de índice inválido')
-            continue
+        continue
 
 
     # VIEW
