@@ -35,8 +35,10 @@ while True:
         valor = input('Índice do item: ')
         try:
             lista.pop(int(valor))
-        except:
+        except ValueError:
             print('Valor de índice inválido')
+        except IndexError:
+            print('Esse intem não existe')
         continue
 
 
